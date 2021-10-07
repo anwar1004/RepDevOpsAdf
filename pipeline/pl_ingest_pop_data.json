@@ -127,44 +127,6 @@
 									}
 								}
 							]
-						},
-						{
-							"name": "Delete1",
-							"type": "Delete",
-							"dependsOn": [
-								{
-									"activity": "Copy population data_copy1",
-									"dependencyConditions": [
-										"Succeeded"
-									]
-								}
-							],
-							"policy": {
-								"timeout": "7.00:00:00",
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"dataset": {
-									"referenceName": "ds_population_by_age_tsv_gz",
-									"type": "DatasetReference",
-									"parameters": {
-										"p_FilenameSrc": {
-											"value": "@variables('vFilenameSrc')",
-											"type": "Expression"
-										}
-									}
-								},
-								"enableLogging": false,
-								"storeSettings": {
-									"type": "AzureBlobStorageReadSettings",
-									"recursive": false,
-									"enablePartitionDiscovery": false
-								}
-							}
 						}
 					]
 				}
