@@ -1,0 +1,9 @@
+{
+	"name": "rg-adf1",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3e1c09e1-9d34-493e-a4ce-131a1ebba411",
+		"tenantId": "b11bd46d-6283-4269-90a9-3600e8322f5c"
+	}
+}

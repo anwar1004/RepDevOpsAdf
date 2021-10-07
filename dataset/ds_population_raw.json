@@ -1,0 +1,33 @@
+{
+	"name": "ds_population_raw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_coviddl",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"pFilenameSInk": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().pFilenameSInk",
+					"type": "Expression"
+				},
+				"folderPath": "population",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
