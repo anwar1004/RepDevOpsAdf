@@ -1,4 +1,4 @@
-exportName,sqlStatement,excelFile,excelPassword,excelWorkSheetName,targetPath,excelTableStyle,isActive
+exportName;sqlStatement;excelFile;excelPassword;excelWorkSheetName;targetPath;excelTableStyle;isActive
 VP_bronbestand;SELECT * FROM datamart.v_vp_bronbestand ORDER BY woonplaats, straat, huisnummer, huisletter, aanvullend_nummer;VP_bronbestand_<<yyyyMMdd>>.xlsx;NULL;VP bronbestand;Exports/VP_bronbestand_nieuwe_stijl;Medium7;1
 gemeentelijk_bronbestand_OBG;SELECT * FROM datamart.v_gemeentelijk_bronbestand ORDER BY woonplaats, straat, huisnummer, huisletter, aanvullend_nummer;gemeentelijk_bronbestand_OBG_<<yyyyMMdd>>.xlsx;Overkoepelend2022;Gemeentelijk bronbestand OBG;Exports/Gemeentelijke_bronbestanden;Medium7;1
 gemeentelijk_bronbestand_eemsdelta;SELECT * FROM datamart.v_gemeentelijk_bronbestand WHERE gemeente ='Eemsdelta' ORDER BY woonplaats, straat, huisnummer, huisletter, aanvullend_nummer;gemeentelijk_bronbestand_eemsdelta_<<yyyyMMdd>>.xlsx;Eemsdelta2022;Gemeentelijk bronbestand Eemsdelta;Exports/Gemeentelijke_bronbestanden;Medium7;1
